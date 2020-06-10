@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+author: "Sveinung Arnesen"
+date: "6/6/2020"
+output: html_document
+---
+```{r setup}
+if(!require("reticulate")){install.packages("reticulate");  library(reticulate)}
+```
+
+```{python}
+x = 'hello, python world!'
+print(x.split(' '))
+```
+
+```{python, engine.path = '/usr/bin/python3'}
+import sys
+print(sys.version)
+```
